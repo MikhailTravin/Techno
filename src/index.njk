@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная страница</title>
+	{% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+	<div class="main-wrapper-outer">
+		{% include 'blocks/header.njk' %}
+		<main class="main">
+
+			{% include 'blocks/forms.njk' %}
+
+		</main>
+		{% include 'blocks/footer.njk' %}
+	</div>
+	<div id="call" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div data-close class="popup__close">
+					<img loading="lazy" src="img/icon/close.svg" alt="">
+				</div>
+				<div class="popup__body">
+					<div class="popup__top">
+						<div class="popup__title">Заказать звонок</div>
+						<p>
+							Оставьте номер телефонаи наш менеджер вам перезвонит
+						</p>
+					</div>
+					<form action="#" class="form">
+						<div class="form__inputs">
+							<div class="form__input">
+								<input data-required autocomplete="off" type="text" name="form[]" placeholder=" ">
+								<div class="form__placeholder">Ваше имя <span>*</span></div>
+							</div>
+							<div class="form__input">
+								<input data-required autocomplete="off" type="text" name="form[]" placeholder=" "
+									class="telephone">
+								<div class="form__placeholder">Номер телефона <span>*</span></div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-orange">
+							<span>Отправить</span>
+							<img loading="lazy" src="img/icon/arrow1.svg" alt="">
+						</button>
+						<div class="form__text">
+							Нажимая на кнопку “Отправить” вы соглашаетесь с обработкой <a href="./">персональных
+								данных</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
