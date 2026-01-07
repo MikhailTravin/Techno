@@ -1000,11 +1000,19 @@ a {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  width: 100%;
+  margin-right: auto;
+  -webkit-box-pack: start;
+  box-pack: start;
+}
+.select__content > * {
+  width: 100%;
+  text-align: left;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 100%;
-  margin-right: auto;
 }
 .select__text {
   -webkit-box-flex: 1;
