@@ -991,28 +991,18 @@ a {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   text-overflow: ellipsis;
-  display: -ms-flexbox;
-  display: flex;
+  overflow: hidden;
+  width: 100%;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  width: 100%;
-  margin-right: auto;
-  -webkit-box-pack: start;
-  box-pack: start;
-}
-.select__content > * {
-  width: 100%;
-  text-align: left;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-items: start;
 }
 .select__text {
   -webkit-box-flex: 1;
