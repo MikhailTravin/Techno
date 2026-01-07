@@ -1621,3 +1621,57 @@ function tabs() {
     }
 }
 tabs();
+
+//========================================================================================================================================================
+
+const characteristicsLink = document.querySelector('.top-product-card2__link');
+const header = document.querySelector('.header');
+
+if (characteristicsLink) {
+    characteristicsLink.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            let headerHeight = 0;
+
+            if (header) {
+                headerHeight = header.offsetHeight;
+            }
+
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+}
+
+//========================================================================================================================================================
+
+document.querySelectorAll('.form__input input').forEach(input => {
+    if (input.value.trim()) {
+        input.parentElement.classList.add('filled');
+    }
+
+    input.addEventListener('input', function () {
+        const parent = this.parentElement;
+        if (this.value.trim()) {
+            parent.classList.add('filled');
+        } else {
+            parent.classList.remove('filled');
+        }
+    });
+
+    input.addEventListener('focus', function () {
+        this.parentElement.classList.add('focused');
+    });
+
+    input.addEventListener('blur', function () {
+        this.parentElement.classList.remove('focused');
+    });
+});

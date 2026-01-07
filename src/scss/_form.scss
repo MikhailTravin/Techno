@@ -89,6 +89,18 @@
                 }
             }
         }
+        &._form-focus {
+            .form__placeholder {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        &.filled {
+            .form__placeholder {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
     }
 
     // .form__placeholder
@@ -187,10 +199,6 @@
             justify-content: start;
         }
     }
-}
-.form__input input:not(:placeholder-shown) + .form__placeholder {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .previews {
@@ -304,6 +312,7 @@
     }
     // .select__content
     &__content {
+        text-align: left;
         flex: 1 1 auto;
         text-overflow: ellipsis;
         display: flex;
