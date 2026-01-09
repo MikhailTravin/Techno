@@ -7,6 +7,10 @@ body {
   line-height: 120%;
   .lock & {
     overflow: hidden;
+    padding: 0px 0px 0px 0px !important;
+  }
+  &.hide-scrollbar {
+    margin: 0px 0px 0px 0px !important;
   }
   .menu-open & {
     overflow: hidden;

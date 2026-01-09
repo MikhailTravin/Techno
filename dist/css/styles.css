@@ -1374,6 +1374,10 @@ body {
 }
 .lock body {
   overflow: hidden;
+  padding: 0px 0px 0px 0px !important;
+}
+body.hide-scrollbar {
+  margin: 0px 0px 0px 0px !important;
 }
 .menu-open body {
   overflow: hidden;
