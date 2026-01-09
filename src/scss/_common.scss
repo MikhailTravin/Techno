@@ -8,9 +8,6 @@ body {
   .lock & {
     overflow: hidden;
   }
-  &.hide-scrollbar {
-    margin: 0px 0px 0px 0px !important;
-  }
   .menu-open & {
     overflow: hidden;
     &::before {

@@ -24,6 +24,12 @@ body::after {
     transition: visibility 0.8s ease 0s;
     visibility: hidden;
     pointer-events: none;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 .popup_show {
     z-index: 150;
@@ -134,4 +140,3 @@ body::after {
         }
     }
 }
-

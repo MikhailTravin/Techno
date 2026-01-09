@@ -639,6 +639,7 @@ a {
   }
 }
 .form__input textarea {
+  resize: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1373,9 +1374,6 @@ body {
 }
 .lock body {
   overflow: hidden;
-}
-body.hide-scrollbar {
-  margin: 0px 0px 0px 0px !important;
 }
 .menu-open body {
   overflow: hidden;
@@ -4053,6 +4051,12 @@ body::after {
   transition: visibility 0.8s ease 0s;
   visibility: hidden;
   pointer-events: none;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.popup::-webkit-scrollbar {
+  display: none;
 }
 
 .popup_show {
