@@ -1361,6 +1361,7 @@ if (document.querySelector('.block-services__slider')) {
         observeParents: true,
         slidesPerView: 1.15,
         spaceBetween: 20,
+        loop: true,
         speed: 400,
         navigation: {
             prevEl: '.services-arrow-prev',
@@ -1409,7 +1410,9 @@ if (document.querySelector('.block-portfolio__slider')) {
         observeParents: true,
         slidesPerView: 1.15,
         spaceBetween: 20,
-        speed: 400,
+        speed: 400, 
+        loop: true,
+        lazy: true,
         navigation: {
             prevEl: '.portfolio-arrow-prev',
             nextEl: '.portfolio-arrow-next',
@@ -1455,6 +1458,8 @@ if (document.querySelector('.block-equipment__slider')) {
         observeParents: true,
         slidesPerView: 'auto',
         spaceBetween: 20,
+        loop: true,
+        lazy: true,
         speed: 400,
         navigation: {
             prevEl: '.equipment-arrow-prev',
@@ -1462,6 +1467,7 @@ if (document.querySelector('.block-equipment__slider')) {
         },
     });
 }
+
 
 if (document.querySelector('.gallery-product-card__slider')) {
     const swiperProductCard = new Swiper('.gallery-product-card__slider', {
