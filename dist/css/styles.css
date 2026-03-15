@@ -2408,6 +2408,12 @@ a {
   overflow: visible;
   min-width: 0;
   padding: 0px 20px;
+  clip-path: polygon(0 0, 100vw 0, 100vw 100%, 0 100%);
+}
+@media (max-width: 1330px) {
+  .block-services__slider {
+    clip-path: none;
+  }
 }
 .block-services__slide {
   display: -webkit-box;
