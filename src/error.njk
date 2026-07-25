@@ -11,6 +11,161 @@
         {% include 'blocks/header.njk' %}
         <main class="main">
 
+            <div class="block-error">
+                <div class="container">
+                    <div class="block-error__content">
+                        <div class="block-error__top">
+                            <div class="block-error__image">
+                                <img src="img/error.webp" alt="">
+                            </div>
+                            <div class="block-error__body">
+                                <h1 class="title2">Страница не найдена</h1>
+                                <div class="block-error__text">
+                                    <p>
+                                        Возможно, ссылка устарела, страница была перенесена или адрес введён с ошибкой
+                                    </p>
+                                    <p>
+                                        Вы можете вернуться на главную страницу, выбрать нужную услугу или отправить
+                                        чертёж для расчёта стоимости
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-error__bottom">
+                            <a href="./" data-popup="#thanks" class="block-error__link btn btn-blue">
+                                <img src="img/icon/home.svg" alt="">
+                                <span>На главную</span>
+                            </a>
+                            <a href="./" data-popup="#failed" class="block-error__link btn">
+                                <span>Смотреть услуги</span>
+                                <img src="img/icon/arrow4.svg" alt="">
+                            </a>
+                            <a href="./" data-popup="#captcha" class="block-error__link btn">
+                                <img src="img/icon/calculate.svg" alt="">
+                                <span>Рассчитать стоисмость</span>
+                            </a>
+                            <a href="./" class="block-error__link btn">
+                                <img src="img/icon/location.svg" alt="">
+                                <span>Контакты</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-section block-section-popular">
+                <div class="container">
+                    <div class="block-section__content">
+                        <div class="block-section__title">
+                            <img loading="lazy" src="img/icon/list.svg" alt="">
+                            <span>Популярные разделы</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>
+                                    Токарные работы
+                                </p>
+                                <p>
+                                    Оборудование
+                                </p>
+                                <p>
+                                    Блог
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Фрезерные работы
+                                </p>
+                                <p>
+                                    Портфолио
+                                </p>
+                                <p>
+                                    Контакты
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Сопутствующие услуги
+                                </p>
+                                <p>
+                                    FAQ
+                                </p>
+                                <p>
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-forms block-forms-error">
+                <div class="container">
+                    <div class="block-forms__content">
+                        <img loading="lazy" src="img/image2.webp" alt="" class="block-forms__pic2">
+                        <div class="block-forms__top">
+                            <div class="block-forms__title">
+                                Рассчитаем стоимость вашего заказа за 3 часа
+                            </div>
+                            <div class="block-forms__subtitle">
+                                <div class="block-forms__icon">
+                                    <img loading="lazy" src="img/image3.webp" alt="">
+                                </div>
+                                <p>
+                                    Отправьте чертежи или описание – <span>получите точный расчет стоимости и
+                                        сроков</span>
+                                </p>
+                            </div>
+                        </div>
+                        <form action="#" class="form">
+                            <div class="form__body">
+                                <div class="form__inputs">
+                                    <div class="form__input">
+                                        <input data-required autocomplete="off" type="text" name="form[]"
+                                            placeholder=" ">
+                                        <div class="form__placeholder">Ваше имя <span>*</span></div>
+                                    </div>
+                                    <div class="form__input form-input4">
+                                        <textarea placeholder="Комментарий"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form__inputs">
+                                    <div class="form__input">
+                                        <input data-required autocomplete="off" type="text" name="form[]"
+                                            placeholder=" " class="telephone">
+                                        <div class="form__placeholder">Номер телефона <span>*</span></div>
+                                    </div>
+                                    <div class="form__files">
+                                        <div class="previews"></div>
+                                        <button type="button" class="form__file">
+                                            <input type="file" accept="image/*">
+                                            <div class="form__icon">
+                                                <img loading="lazy" src="img/icon/file.svg" alt="">
+                                            </div>
+                                            <p>
+                                                Прикрепить файл или чертеж
+                                                <br>
+                                                <span> PDF, DWG, DXF, JPG до 20 МБ</span>
+                                            </p>
+                                        </button>
+                                    </div>
+                                    <div class="form__input">
+                                        <button type="submit" class="btn btn-orange">
+                                            <span>Рассчитать стоимость</span>
+                                            <img loading="lazy" src="img/icon/arrow1.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__text">
+                                Нажимая на кнопку “Оставить заявку” я соглашаюсь на обработку <a href="./">персональных
+                                    данных</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
             {% include 'blocks/cookie.njk' %}
 
         </main>
@@ -54,6 +209,7 @@
             </div>
         </div>
     </div>
+    {% include 'blocks/popups.njk' %}
     {% include 'blocks/scripts.njk' %}
 </body>
 
