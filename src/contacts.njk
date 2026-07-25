@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Контакты</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <h1 class="container">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <img src="img/icon/home.svg" alt="">
+                            </a>
+                        </li>
+                        <li>Контакты</li>
+                    </ul>
+                </h1>
+            </div>
+
+            <div class="block-contacts">
+                <div class="container">
+                    <h1 class="title2 big">
+                        Контакты
+                    </h1>
+                    <div class="block-contacts__content">
+                        <div class="block-contacts__body">
+                            <div class="block-contacts__column">
+                                <div class="block-contacts__icon">
+                                    <img src="img/icon/phone2.svg" alt="">
+                                </div>
+                                <div class="block-contacts__item">
+                                    <div class="block-contacts__title">
+                                        Телефон:
+                                    </div>
+                                    <div class="block-contacts__text">
+                                        <a href="tel:79360004050">+7 936 000 40 50</a>
+                                    </div>
+                                    <div class="block-contacts__socials">
+                                        <a href="./" class="block-contacts__social">
+                                            <div class="block-contacts__social-icon">
+                                                <img loading="lazy" src="img/icon/whatsapp.svg" alt="">
+                                            </div>
+                                            WhatsApp
+                                        </a>
+                                        <a href="./" class="block-contacts__social">
+                                            <div class="block-contacts__social-icon">
+                                                <img loading="lazy" src="img/icon/telegram.svg" alt="">
+                                            </div>
+                                            Telegram
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-contacts__column">
+                                <div class="block-contacts__icon">
+                                    <img src="img/icon/mail.svg" alt="">
+                                </div>
+                                <div class="block-contacts__item">
+                                    <div class="block-contacts__title">
+                                        E-mail для заказов:
+                                    </div>
+                                    <div class="block-contacts__text">
+                                        <a href="mailto:zakaz@cnc-techno">zakaz@cnc-techno</a>
+                                    </div>
+                                    <a href="./" class="heading-complex__link">
+                                        Написать нам
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="block-contacts__column">
+                                <div class="block-contacts__icon">
+                                    <img src="img/icon/time.svg" alt="">
+                                </div>
+                                <div class="block-contacts__item">
+                                    <div class="block-contacts__title">
+                                        График работы:
+                                    </div>
+                                    <div class="block-contacts__text">
+                                        <p>
+                                            Пн-Сб: с 09.00 до 19.00
+                                        </p>
+                                        <p>Вс: выходной</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-contacts__column">
+                                <div class="block-contacts__icon">
+                                    <img src="img/icon/map-pin.svg" alt="">
+                                </div>
+                                <div class="block-contacts__item">
+                                    <div class="block-contacts__title">
+                                        Адрес офиса:
+                                    </div>
+                                    <div class="block-contacts__text">
+                                        <p>
+                                            Московская обл. г. Подольск, Домодедовское шоссе, дом 9
+                                        </p>
+                                    </div>
+                                    <a href="./" class="heading-complex__link">
+                                        Построить маршрут
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-contacts__map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-section">
+                <div class="container">
+                    <div class="block-section__content">
+                        <div class="block-section__title">
+                            <img loading="lazy" src="img/icon/list.svg" alt="">
+                            <span>Реквизиты компании</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span>ООО</span>
+                                    «CNC-techno»
+                                </p>
+                                <p>
+                                    <span>ИНН</span>
+                                    7724738571
+                                </p>
+                                <p>
+                                    <span>КПП</span>
+                                    773501001
+                                </p>
+                                <p>
+                                    <span>ОГРН</span>
+                                    1107746155285
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-forms block-forms-contacts">
+                <img loading="lazy" src="img/image16.webp" alt="" class="block-forms__pic1">
+                <div class="container">
+                    <div class="block-forms__content">
+                        <div class="block-forms__top">
+                            <div class="block-forms__title">
+                                Свяжитесь с нами
+                            </div>
+                            <div class="block-forms__subtitle">
+                                <p>
+                                    Заполните форму, и мы свяжемся с вами <span>для уточнения деталей</span>
+                                </p>
+                            </div>
+                        </div>
+                        <form action="#" class="form">
+                            <div class="form__inputs">
+                                <div class="form__input">
+                                    <input data-required autocomplete="off" type="text" name="form[]" placeholder=" ">
+                                    <div class="form__placeholder">Ваше имя <span>*</span></div>
+                                </div>
+                                <div class="form__input">
+                                    <input data-required autocomplete="off" type="text" name="form[]" placeholder=" "
+                                        class="telephone">
+                                    <div class="form__placeholder">Номер телефона <span>*</span></div>
+                                </div>
+                            </div>
+                            <div class="form__inputs">
+                                <div class="form__input">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="Компания">
+                                </div>
+                                <div class="form__input">
+                                    <input autocomplete="off" type="text" name="form[]" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="form__inputs">
+                                <div class="form__input">
+                                    <select name="form[]" class="select1">
+                                        <option value="1" selected>Тема обращения</option>
+                                        <option value="2">Тема обращения2</option>
+                                        <option value="3">Тема обращения3</option>
+                                        <option value="4">Тема обращения4</option>
+                                    </select>
+                                </div>
+                                <div class="form__files">
+                                    <div class="previews"></div>
+                                    <button type="button" class="form__file">
+                                        <input type="file" accept="image/*">
+                                        <div class="form__icon">
+                                            <img loading="lazy" src="img/icon/file.svg" alt="">
+                                        </div>
+                                        <p>
+                                            Прикрепить файл или чертеж
+                                            <br>
+                                            <span> PDF, DWG, DXF, JPG до 20 МБ</span>
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form__input form-input4">
+                                <textarea placeholder="Опишите ваш вопрос или задачу"></textarea>
+                            </div>
+                            <div class="form__bottom">
+                                <div class="form__buttons">
+                                    <div id="captcha-container" class="smart-captcha" data-sitekey="ВАШ_КЛЮЧ_КЛИЕНТА"
+                                        data-hl="ru"></div>
+                                    <button type="submit" class="btn btn-orange">
+                                        <span>Отправить заявку</span>
+                                        <img loading="lazy" src="img/icon/arrow1.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="form__text">
+                                    Нажимая на кнопку “Оставить заявку” я соглашаюсь на обработку <a
+                                        href="./">персональных данных</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/cookie.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    <div id="call" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <div data-close class="popup__close">
+                    <img loading="lazy" src="img/icon/close.svg" alt="">
+                </div>
+                <div class="popup__body">
+                    <div class="popup__top">
+                        <div class="popup__title">Заказать звонок</div>
+                        <p>
+                            Оставьте номер телефонаи наш менеджер вам перезвонит
+                        </p>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="form__inputs">
+                            <div class="form__input">
+                                <input data-required autocomplete="off" type="text" name="form[]" placeholder=" ">
+                                <div class="form__placeholder">Ваше имя <span>*</span></div>
+                            </div>
+                            <div class="form__input">
+                                <input data-required autocomplete="off" type="text" name="form[]" placeholder=" "
+                                    class="telephone">
+                                <div class="form__placeholder">Номер телефона <span>*</span></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-orange">
+                            <span>Отправить</span>
+                            <img loading="lazy" src="img/icon/arrow1.svg" alt="">
+                        </button>
+                        <div class="form__text">
+                            Нажимая на кнопку “Отправить” вы соглашаетесь с обработкой <a href="./">персональных
+                                данных</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

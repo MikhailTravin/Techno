@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Портфолио</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <h1 class="container">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <img src="img/icon/home.svg" alt="">
+                            </a>
+                        </li>
+                        <li>Портфолио</li>
+                    </ul>
+                </h1>
+            </div>
+
+            <div class="block-portfolio2">
+                <div class="block-portfolio__top">
+                    <div class="container">
+                        <div class="heading-complex">
+                            <div class="heading-complex__left">
+                                <h2 class="title2 big">
+                                    Портфолио CNC TECHNO
+                                </h2>
+                                <p>
+                                    Примеры деталей, изделий и производственных задач, выполненных с приминением
+                                    токарной,
+                                    фрезерной и сопутствующей обработки на ЧПУ
+                                </p>
+                            </div>
+                            <div class="heading-complex__arrows"></div>
+                        </div>
+                        <div class="filter">
+                            <div class="filter__slider swiper">
+                                <div class="filter__wrapper swiper-wrapper">
+                                    <button type="button" data-filter="all"
+                                        class="block-equipment__slide swiper-slide active">
+                                        Все работы
+                                    </button>
+                                    <button type="button" data-filter="filter1"
+                                        class="block-equipment__slide swiper-slide">
+                                        Токарная обработка
+                                    </button>
+                                    <button type="button" data-filter="filter2"
+                                        class="block-equipment__slide swiper-slide">
+                                        Фрезерная обработка
+                                    </button>
+                                    <button type="button" data-filter="filter3"
+                                        class="block-equipment__slide swiper-slide">
+                                        Сопутствующие услуги
+                                    </button>
+                                    <button type="button" data-filter="filter4"
+                                        class="block-equipment__slide swiper-slide">
+                                        Сопутствующие услуги
+                                    </button>
+                                </div>
+                            </div>
+                            <div data-da=".heading-complex__arrows, 1500" class="filter-arrow-prev arrow-prev">
+                                <img loading="lazy" src="img/icon/arrow2.svg" alt="">
+                            </div>
+                            <div data-da=".heading-complex__arrows, 1500" class="filter-arrow-next arrow-next">
+                                <img loading="lazy" src="img/icon/arrow2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-portfolio__bottom">
+                    <div class="container">
+                        <div class="block-portfolio__cards">
+                            <a href="./" data-filter="filter1" class="block-portfolio__card">
+                                <div class="block-services__image">
+                                    <img loading="lazy" src="img/services/image1.webp" alt="">
+                                </div>
+                                <div class="block-portfolio__item">
+                                    <div class="block-services__text">
+                                        <div class="block-services__title">
+                                            Корпусная деталь на ЧПУ
+                                        </div>
+                                        <p>
+                                            Изготовление корпусной детали по чертежу заказчика
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Тип работ:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                фрезерная обработка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Материал:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                алюминий
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="./" data-filter="filter2" class="block-portfolio__card">
+                                <div class="block-services__image">
+                                    <img loading="lazy" src="img/services/image1.webp" alt="">
+                                </div>
+                                <div class="block-portfolio__item">
+                                    <div class="block-services__text">
+                                        <div class="block-services__title">
+                                            Корпусная деталь на ЧПУ
+                                        </div>
+                                        <p>
+                                            Изготовление корпусной детали по чертежу заказчика
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Тип работ:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                фрезерная обработка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Материал:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                алюминий
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="./" data-filter="filter3" class="block-portfolio__card">
+                                <div class="block-services__image">
+                                    <img loading="lazy" src="img/services/image1.webp" alt="">
+                                </div>
+                                <div class="block-portfolio__item">
+                                    <div class="block-services__text">
+                                        <div class="block-services__title">
+                                            Корпусная деталь на ЧПУ
+                                        </div>
+                                        <p>
+                                            Изготовление корпусной детали по чертежу заказчика
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Тип работ:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                фрезерная обработка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Материал:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                алюминий
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="./" data-filter="filter4" class="block-portfolio__card">
+                                <div class="block-services__image">
+                                    <img loading="lazy" src="img/services/image1.webp" alt="">
+                                </div>
+                                <div class="block-portfolio__item">
+                                    <div class="block-services__text">
+                                        <div class="block-services__title">
+                                            Корпусная деталь на ЧПУ
+                                        </div>
+                                        <p>
+                                            Изготовление корпусной детали по чертежу заказчика
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Тип работ:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                фрезерная обработка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Материал:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                алюминий
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="./" data-filter="filter1" class="block-portfolio__card">
+                                <div class="block-services__image">
+                                    <img loading="lazy" src="img/services/image1.webp" alt="">
+                                </div>
+                                <div class="block-portfolio__item">
+                                    <div class="block-services__text">
+                                        <div class="block-services__title">
+                                            Корпусная деталь на ЧПУ
+                                        </div>
+                                        <p>
+                                            Изготовление корпусной детали по чертежу заказчика
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Тип работ:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                фрезерная обработка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Материал:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                алюминий
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                            <a href="./" data-filter="filter2" class="block-portfolio__card">
+                                <div class="block-services__image">
+                                    <img loading="lazy" src="img/services/image1.webp" alt="">
+                                </div>
+                                <div class="block-portfolio__item">
+                                    <div class="block-services__text">
+                                        <div class="block-services__title">
+                                            Корпусная деталь на ЧПУ
+                                        </div>
+                                        <p>
+                                            Изготовление корпусной детали по чертежу заказчика
+                                        </p>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Тип работ:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                фрезерная обработка
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="block-portfolio__name">
+                                                Материал:
+                                            </div>
+                                            <div class="block-portfolio__value">
+                                                алюминий
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pagination">
+                            <span class="pagination__item_nav pagination__item_nav-prev" href="#">
+                                <img src="img/icon/arrow2.svg" alt="">
+                                <div class="pagination__item_nav-text">
+                                    Назад
+                                </div>
+                            </span>
+                            <div class="pagination__center">
+                                <div>
+                                    <a class="pagination__item pagination__item_active" href="#">1</a>
+                                </div>
+                                <div>
+                                    <a class="pagination__item" href="#">2</a>
+                                </div>
+                                <div>
+                                    <a class="pagination__item pagination__item_ellipsis" href="#">...</a>
+                                </div>
+                                <div>
+                                    <a class="pagination__item" href="#">12</a>
+                                </div>
+                                <div>
+                                    <a class="pagination__item" href="#">13</a>
+                                </div>
+                            </div>
+                            <a class="pagination__item_nav pagination__item_nav-next" href="#">
+                                <div class="pagination__item_nav-text">
+                                    Вперед
+                                </div>
+                                <img src="img/icon/arrow2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-forms block-forms3">
+                <img loading="lazy" src="img/image13.webp" alt="" class="block-forms__pic1">
+                <img loading="lazy" src="img/image12.webp" alt="" class="block-forms__pic2">
+                <div class="container">
+                    <div class="block-forms__content">
+                        <div class="block-forms__top">
+                            <div class="block-forms__title">
+                                Нужно изготовить похожую деталь?
+                            </div>
+                            <div class="block-forms__subtitle">
+                                <div class="block-forms__icon">
+                                    <img loading="lazy" src="img/image3.webp" alt="">
+                                </div>
+                                <p>
+                                    Отправьте чертёж, 3D-модель или описание задачи — <span>рассчитаем стоимость и сроки
+                                        изготовления</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-forms__buttons">
+                            <a href="./" class="btn btn-orange">
+                                <span>Рассчитать стоимость</span>
+                                <img loading="lazy" src="img/icon/arrow1.svg" alt="">
+                            </a>
+                            <a href="./" class="btn btn-white">
+                                <span>Отправить чертеж</span>
+                                <img loading="lazy" src="img/icon/arrow1.svg" alt="" class="btn-white-arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/cookie.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    <div id="call" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <div data-close class="popup__close">
+                    <img loading="lazy" src="img/icon/close.svg" alt="">
+                </div>
+                <div class="popup__body">
+                    <div class="popup__top">
+                        <div class="popup__title">Заказать звонок</div>
+                        <p>
+                            Оставьте номер телефонаи наш менеджер вам перезвонит
+                        </p>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="form__inputs">
+                            <div class="form__input">
+                                <input data-required autocomplete="off" type="text" name="form[]" placeholder=" ">
+                                <div class="form__placeholder">Ваше имя <span>*</span></div>
+                            </div>
+                            <div class="form__input">
+                                <input data-required autocomplete="off" type="text" name="form[]" placeholder=" "
+                                    class="telephone">
+                                <div class="form__placeholder">Номер телефона <span>*</span></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-orange">
+                            <span>Отправить</span>
+                            <img loading="lazy" src="img/icon/arrow1.svg" alt="">
+                        </button>
+                        <div class="form__text">
+                            Нажимая на кнопку “Отправить” вы соглашаетесь с обработкой <a href="./">персональных
+                                данных</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

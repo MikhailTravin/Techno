@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Вакансии</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <h1 class="container">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <img src="img/icon/home.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                О компании
+                            </a>
+                        </li>
+                        <li>Вакансии</li>
+                    </ul>
+                </h1>
+            </div>
+
+            <div class="block-vacancy">
+                <div class="container">
+                    <h1 class="title2 big">Вакансии</h1>
+                    <div class="block-vacancy__content">
+                        <div class="block-vacancy__body">
+                            <div class="block-vacancy__column">
+                                <div class="block-vacancy__icon">
+                                    <img src="img/icon/vacancy.svg" alt="">
+                                </div>
+                                <div class="block-vacancy__item">
+                                    <div class="block-vacancy__title">
+                                        На данный момент открытых вакансий нет
+                                    </div>
+                                    <p>
+                                        Мы постоянно развиваемся и всегда рады талантливым и ответственным специалистам.
+                                        Следите за обновлениями — возможно, именно вы станете частью нашей команды!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-vacancy__column">
+                                <div class="block-vacancy__icon icon-phone">
+                                    <img src="img/icon/phone1.svg" alt="">
+                                </div>
+                                <div class="block-vacancy__item">
+                                    <div class="block-vacancy__title">
+                                        На данный момент открытых вакансий нет
+                                    </div>
+                                    <a href="tel:79360004050" class="block-vacancy__phone">+7 936 000 40 50</a>
+                                    <p>
+                                        Мы постоянно развиваемся и всегда рады талантливым и ответственным специалистам.
+                                        Следите за обновлениями — возможно, именно вы станете частью нашей команды!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-vacancy__image">
+                            <img src="img/image15.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-benefits1 block-benefits1-vacancy">
+                <div class="container">
+                    <div class="block-benefits1__body">
+                        <div class="block-benefits1__column">
+                            <div class="block-benefits1__icon">
+                                <img loading="lazy" src="img/icon/stability.svg" alt="">
+                            </div>
+                            <div class="block-benefits1__text">
+                                <div class="block-benefits1__title">
+                                    Стабильность
+                                </div>
+                                <p>
+                                    Надежная компания с многолетним опытом
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-benefits1__column">
+                            <div class="block-benefits1__icon">
+                                <img loading="lazy" src="img/icon/development.svg" alt="">
+                            </div>
+                            <div class="block-benefits1__text">
+                                <div class="block-benefits1__title">
+                                    Развитие
+                                </div>
+                                <p>
+                                    Профессиональный рост и обучение
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-benefits1__column">
+                            <div class="block-benefits1__icon">
+                                <img loading="lazy" src="img/icon/teams.svg" alt="">
+                            </div>
+                            <div class="block-benefits1__text">
+                                <div class="block-benefits1__title">
+                                    Команда
+                                </div>
+                                <p>
+                                    Опытные специалисты
+                                    и дружный коллектив
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-benefits1__column">
+                            <div class="block-benefits1__icon">
+                                <img loading="lazy" src="img/icon/production.svg" alt="">
+                            </div>
+                            <div class="block-benefits1__text">
+                                <div class="block-benefits1__title">
+                                    Современное производство
+                                </div>
+                                <p>
+                                    Новейшее оборудование и технологии
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/cookie.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    <div id="call" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__content">
+                <div data-close class="popup__close">
+                    <img loading="lazy" src="img/icon/close.svg" alt="">
+                </div>
+                <div class="popup__body">
+                    <div class="popup__top">
+                        <div class="popup__title">Заказать звонок</div>
+                        <p>
+                            Оставьте номер телефонаи наш менеджер вам перезвонит
+                        </p>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="form__inputs">
+                            <div class="form__input">
+                                <input data-required autocomplete="off" type="text" name="form[]" placeholder=" ">
+                                <div class="form__placeholder">Ваше имя <span>*</span></div>
+                            </div>
+                            <div class="form__input">
+                                <input data-required autocomplete="off" type="text" name="form[]" placeholder=" "
+                                    class="telephone">
+                                <div class="form__placeholder">Номер телефона <span>*</span></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-orange">
+                            <span>Отправить</span>
+                            <img loading="lazy" src="img/icon/arrow1.svg" alt="">
+                        </button>
+                        <div class="form__text">
+                            Нажимая на кнопку “Отправить” вы соглашаетесь с обработкой <a href="./">персональных
+                                данных</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
