@@ -4024,6 +4024,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .block-portfolio__card {
@@ -4050,6 +4053,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 22px;
+  padding: 0px 20px 30px 20px;
+}
+@media (max-width: 768px) {
+  .block-portfolio__item {
+    padding: 0px 10px 20px 10px;
+  }
 }
 .block-portfolio__item ul {
   display: -webkit-box;
